@@ -38,11 +38,6 @@ class ServerFailure extends Failures {
           return const ServerFailure("No Internet Connection");
         }
         return const ServerFailure("Unexpected error, Please try later!");
-
-      default:
-        return const ServerFailure(
-          "Opps there was an error, Please try later!",
-        );
     }
   }
 
